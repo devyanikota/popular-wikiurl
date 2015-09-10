@@ -9,7 +9,6 @@ app = Flask(__name__)
 
 @app.route('/')
 def pop_wiki_link():
-    # link = raw_input("Enter the wikipedia link : ")
     link = request.args.get('link')
     response = requests.get(link)
     for link in BeautifulSoup(response.text, 'html.parser').find_all('a'):
@@ -33,7 +32,7 @@ def pop_wiki_link():
                         l = slink
                         maxcount = count
                     else:
-                        continue
+                        pass
     return l
 
 if __name__ == '__main__':
