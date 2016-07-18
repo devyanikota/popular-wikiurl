@@ -1,0 +1,3 @@
+python-pip
+python-flask
+python-beautifulsoup4
