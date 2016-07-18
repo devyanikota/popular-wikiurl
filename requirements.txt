@@ -1,3 +1,4 @@
 python-pip
 python-flask
 python-beautifulsoup4
+python-requests
